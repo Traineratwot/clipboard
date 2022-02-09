@@ -1,6 +1,6 @@
 {
   "name": "web-clipboard",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "simple class for work with clipboad",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.js",
@@ -18,6 +18,11 @@
   "files": [
     "dist/*.js",
     "dist/*.ts"
+  ],
+  "keywords": [
+    "vue3",
+    "clipboard",
+    "browser"
   ],
   "scripts": {
     "dev": "rollup -c -w",
