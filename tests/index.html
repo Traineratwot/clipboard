@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<script src="../dist/index.umd.js"></script>
+	<script>
+		var cl = new WebClipboard.WebClipboard('navigator')
+		var cl2 = new WebClipboard.WebClipboard('fallback')
+		var cl3 = new WebClipboard.WebClipboard()
+	</script>
+	<h4>test navigator mode</h4>
+	<button onclick="cl.write(textareaWrite.value)">wtite</button>
+	<button onclick="cl.read().then((val)=>{textareaRead.value = val})">read</button>
+	<input id="textareaWrite" placeholder="write" type="text">
+
+	</input>
+	<input id="textareaRead" placeholder="read" type="text">
+
+	</input>
+	<br>
+	<br>
+	<h4>test fallback mode</h4>
+	<button onclick="cl2.write(textareaWrite2.value)">wtite</button>
+	<button onclick="cl2.read().then((val)=>{textareaRead2.value = val})">read</button>
+	<input id="textareaWrite2" placeholder="write" type="text">
+
+	</input>
+	<input id="textareaRead2" placeholder="read" type="text">
+
+	</input>
+		<br>
+		<br>
+		<h4>test auto mode</h4>
+		<button onclick="cl3.write(textareaWrite3.value)">wtite</button>
+		<button onclick="cl3.read().then((val)=>{textareaRead3.value = val})">read</button>
+		<input id="textareaWrite3" placeholder="write" type="text">
+		
+		</input>
+		<input id="textareaRead3" placeholder="read" type="text">
+		
+		</input>
+</body>
+
+</html>
