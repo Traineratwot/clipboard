@@ -1,11 +1,20 @@
 {
   "name": "web-clipboard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simple class for work with clipboad",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.js",
   "browser": "./dist/index.umd.js",
   "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Traineratwot/clipboard.git"
+  },
+  "homepage": "https://github.com/Traineratwot/clipboard#readme",
+  "bugs": {
+    "url": "https://github.com/Traineratwot/clipboard/issues",
+    "email": "traineratwot@yandex.ru"
+  },
   "files": [
     "dist/*.js",
     "dist/*.ts"
@@ -16,7 +25,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "traineratwot",
-  "contributors": ["Aidan647"],
+  "contributors": [
+    "Aidan647"
+  ],
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.1",
