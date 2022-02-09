@@ -20,6 +20,11 @@ Simple use in browser
 Simple use in vue3
 ```js
 import clipboard from "web-clipboard";
+declare module "@vue/runtime-core" {
+	interface ComponentCustomProperties {
+		$clipboard:typeof clipboard
+	}
+}
 createApp(App)
 	.use(clipboard)
 

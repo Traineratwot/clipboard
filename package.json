@@ -1,6 +1,6 @@
 {
   "name": "web-clipboard",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "simple class for work with clipboad",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.js",
